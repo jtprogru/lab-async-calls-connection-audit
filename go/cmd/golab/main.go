@@ -46,6 +46,7 @@ var modes = []struct{ name, help string }{
 	{"no-close-default", "тело не закрыто, http.DefaultClient; длинный таймлайн (-for)"},
 	{"no-close-nka", "то же, keepalive клиента выключен"},
 	{"no-close-ka10", "то же, keepalive клиента 10s"},
+	{"no-close-dialer", "то же, net.Dialer без KeepAlive: Go ставит 15s"},
 	{"read-no-close", "тело дочитано до EOF, Close не вызван"},
 	{"close-no-read", "Close без чтения, ответ 3 байта"},
 	{"close-no-read-big", "Close без чтения, ответ 1 МиБ (-tw — посчитать TIME_WAIT)"},
@@ -62,7 +63,17 @@ var (
 	flagTW   = flag.Bool("tw", false, "напечатать число TIME_WAIT к порту target через секунду после прогона")
 	flagRaw  = flag.Bool("raw", false, "в конце таймлайна напечатать сырой список сокетов процесса")
 	flagKA   = flag.Duration("ka", 0, "probe: keepalive клиента (0 — по умолчанию Go, -1s — выключен)")
+	flagN    = flag.Int("n", 0, "число запросов (0 — как в посте: 20 для no-close-*, 50 для остальных)")
+	flagStep = flag.Duration("step", 0, "no-close-*: печатать состояние с этим шагом и временем на часах вместо отметок из поста")
+	flagHold = flag.Duration("hold", 0, "подождать после прогона, не завершая процесс: чтобы снять ss и nstat снаружи")
 )
+
+func requests(def int) int {
+	if *flagN > 0 {
+		return *flagN
+	}
+	return def
+}
 
 var reused, fresh int
 
@@ -147,20 +158,20 @@ func main() {
 	case "transport-per-call":
 		transportPerCall()
 	case "client-per-call":
-		for range 50 {
+		for range requests(50) {
 			c := &http.Client{Timeout: 5 * time.Second}
 			drain(get(c, base+"/ok"))
 		}
 		report(mode)
 	case "shared":
 		c := &http.Client{Timeout: 5 * time.Second}
-		for range 50 {
+		for range requests(50) {
 			drain(get(c, base+"/ok"))
 		}
 		report(mode)
 	case "graceful-close":
 		var ts []*http.Transport
-		for range 50 {
+		for range requests(50) {
 			t := &http.Transport{}
 			ts = append(ts, t)
 			c := &http.Client{Transport: t, Timeout: 5 * time.Second}
@@ -172,7 +183,7 @@ func main() {
 		time.Sleep(200 * time.Millisecond)
 		report(mode)
 		timeWait()
-	case "no-close", "no-close-default", "no-close-nka", "no-close-ka10":
+	case "no-close", "no-close-default", "no-close-nka", "no-close-ka10", "no-close-dialer":
 		noClose(mode)
 	case "read-no-close", "close-no-read", "close-no-read-big":
 		bodies(mode)
@@ -187,6 +198,10 @@ func main() {
 	case "probe":
 		probe()
 	}
+	if *flagHold > 0 {
+		fmt.Printf("pid=%d, жду %s\n", os.Getpid(), *flagHold)
+		time.Sleep(*flagHold)
+	}
 }
 
 func drain(resp *http.Response, err error) {
@@ -198,7 +213,7 @@ func drain(resp *http.Response, err error) {
 // Пятьдесят вызовов, каждый со своим Transport: тело дочитано и закрыто,
 // но пул у каждого вызова свой, и брошенные соединения остаются открытыми.
 func transportPerCall() {
-	for range 50 {
+	for range requests(50) {
 		c := &http.Client{Transport: &http.Transport{}, Timeout: 5 * time.Second}
 		drain(get(c, base+"/ok"))
 	}
@@ -218,17 +233,21 @@ func noClose(mode string) {
 		c = &http.Client{Timeout: 5 * time.Second}
 	case "no-close-default":
 		c = http.DefaultClient
-	case "no-close-nka", "no-close-ka10":
-		ka := -1 * time.Second
-		if mode == "no-close-ka10" {
-			ka = 10 * time.Second
-		}
+	case "no-close-nka", "no-close-ka10", "no-close-dialer":
+		// DefaultTransport ставит KeepAlive 30s; net.Dialer без KeepAlive — 15s.
+		ka := map[string]time.Duration{"no-close-nka": -1, "no-close-ka10": 10 * time.Second, "no-close-dialer": 0}[mode]
 		t := http.DefaultTransport.(*http.Transport).Clone()
 		d := &net.Dialer{Timeout: 30 * time.Second, KeepAlive: ka}
 		t.DialContext = d.DialContext
 		c = &http.Client{Transport: t}
 	}
-	if mode != "no-close" {
+	switch {
+	case *flagStep > 0:
+		marks = nil
+		for m := *flagStep; m <= *flagFor; m += *flagStep {
+			marks = append(marks, m)
+		}
+	case mode != "no-close":
 		changes = true
 		for _, m := range []time.Duration{30 * time.Second, 90 * time.Second, 4 * time.Minute} {
 			if m < *flagFor {
@@ -237,12 +256,15 @@ func noClose(mode string) {
 		}
 		marks = append(marks, *flagFor)
 	}
-	for range 20 {
+	for range requests(20) {
 		resp, err := get(c, base+"/ok")
 		must(err)
 		_ = resp // ни чтения, ни Close
 	}
 	start := time.Now()
+	if *flagStep > 0 {
+		fmt.Printf("pid=%d, запросы ушли в %s\n", os.Getpid(), start.Format("15:04:05.000"))
+	}
 	report(mode)
 	timeline(start, marks, changes)
 	if *flagRaw {
@@ -270,7 +292,11 @@ func timeline(start time.Time, marks []time.Duration, changes bool) {
 				prev = cur
 			}
 		}
-		report(fmt.Sprintf("  +%s", m))
+		label := fmt.Sprintf("  +%s", m)
+		if *flagStep > 0 {
+			label += " " + time.Now().Format("15:04:05.000")
+		}
+		report(label)
 		prev = sockets()
 	}
 }
@@ -281,7 +307,7 @@ func bodies(mode string) {
 	if mode == "close-no-read-big" {
 		path = "/big"
 	}
-	for range 50 {
+	for range requests(50) {
 		resp, err := get(c, base+path)
 		must(err)
 		if mode == "read-no-close" {
