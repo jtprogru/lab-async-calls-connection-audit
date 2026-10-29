@@ -65,8 +65,8 @@ go-body: build ## Закрыть ещё не значит дочитать: 3 б
 
 .PHONY: go-tw
 go-tw: build ## TIME_WAIT: вежливое закрытие против Close недочитанного мегабайта
-	@$(WITH) 0 $(GOLAB) -tw graceful-close
-	@$(WITH) 0 $(GOLAB) -tw close-no-read-big
+	@LAB_PORT=18110 LAB_STATS=18111 $(WITH) 0 $(GOLAB) -tw graceful-close
+	@LAB_PORT=18112 LAB_STATS=18113 $(WITH) 0 $(GOLAB) -tw close-no-read-big
 
 .PHONY: go-hang
 go-hang: build ## Вызов без таймаута: висит 30 секунд и дальше
@@ -156,6 +156,25 @@ service-lint: ## go vet, golangci-lint (bodyclose, noctx, errcheck, contextcheck
 .PHONY: results
 results: build ## Прогнать всё и сложить выводы в results/<ос>/ (долго: FOR на длинные режимы)
 	scripts/run-all.sh results/$$(uname | tr A-Z a-z | sed s/darwin/macos/)
+
+## ---------------------------------------------------------------- Linux: tcpdump и netns (нужен sudo)
+
+DUR ?= 300
+
+.PHONY: linux-closewait
+linux-closewait: build ## Пять вариантов keepalive: когда CLOSE_WAIT получает RST (tcpdump, DUR=300)
+	DUR=$(DUR) scripts/linux/closewait-all.sh
+
+.PHONY: linux-timewait
+linux-timewait: build ## TIME_WAIT и FIN_WAIT_2 при tcp_fin_timeout 60 и 10, в своих netns
+	sudo scripts/linux/timewait.sh 60 & sudo scripts/linux/timewait.sh 10 & wait
+
+.PHONY: linux-bigclose
+linux-bigclose: build ## Close недочитанного мегабайта: RST вместо FIN, без TIME_WAIT (netns)
+	sudo scripts/linux/bigclose.sh
+
+.PHONY: linux-deep
+linux-deep: linux-bigclose linux-timewait linux-closewait ## Всё из трёх целей выше
 
 ## ---------------------------------------------------------------- Docker (Linux на macOS)
 

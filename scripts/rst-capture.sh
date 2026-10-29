@@ -7,7 +7,10 @@
 set -euo pipefail
 port=$1
 shift
-pcap=$(mktemp -t lab-XXXXXX.pcap)
+# Файл не создаём заранее: tcpdump от root не откроет чужой файл в /tmp
+# (fs.protected_regular), поэтому пишем в свежий временный каталог.
+tmp=$(mktemp -d)
+pcap=$tmp/capture.pcap
 sudo=""
 [[ $(id -u) -ne 0 ]] && sudo="sudo"
 iface=lo
@@ -21,4 +24,4 @@ $sudo kill "$tcpdump_pid" 2>/dev/null || true
 wait "$tcpdump_pid" 2>/dev/null || true
 echo "## tcpdump: tcp port $port, время от первого пакета"
 $sudo tcpdump -nn -ttttt -r "$pcap" 2>/dev/null
-$sudo rm -f "$pcap"
+$sudo rm -rf "$tmp"
