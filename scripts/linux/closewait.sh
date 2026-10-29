@@ -13,7 +13,7 @@ BIN=${BIN:-$root/bin}
 port=${LAB_PORT:-28080}
 dur=${DUR:-300}
 L=${LOGS:-$root/results/linux/rerun}/$name
-mkdir -p "$L"
+mkdir -p "$L" || exit 1
 export LAB_PORT=$port LAB_STATS=$((port + 1))
 
 "$BIN/target" -idle "$idle" >"$L/target.log" 2>&1 &

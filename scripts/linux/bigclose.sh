@@ -8,7 +8,12 @@ BIN=${BIN:-$root/bin}
 port=${LAB_PORT:-28080}
 NS=lab-big
 L=${LOGS:-$root/results/linux/rerun}/bigclose
-mkdir -p "$L"
+mkdir -p "$L" || exit 1
+# Каталоги создаёт root; отдаём их тому, кто звал sudo, иначе closewait.sh
+# от обычного пользователя не сможет писать рядом.
+if [[ -n ${SUDO_USER:-} ]]; then
+  chown "$SUDO_USER": "$(dirname "$L")" "$L"
+fi
 X="ip netns exec $NS"
 export LAB_PORT=$port LAB_STATS=$((port + 1))
 ip netns add "$NS" 2>/dev/null
@@ -44,4 +49,5 @@ done
 kill "$TP"
 wait 2>/dev/null
 ip netns del "$NS"
+[[ -n ${SUDO_USER:-} ]] && chown -R "$SUDO_USER": "$L"
 echo "готово: $L"
