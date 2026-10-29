@@ -1,0 +1,31 @@
+# дата: 2026-10-29T13:01:36Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: LAB_PORT=18098 idle=2s scripts/rst-capture.sh 18098 bin/golab -for 100s probe
+
+t=  0.0s сокет: ESTABLISHED=1, SO_ERROR=0 (errno 0)
+t=  2.0s сокет: CLOSE_WAIT=1, SO_ERROR=0 (errno 0)
+t= 63.4s сокет: нет, дескрипторов без TCP-соединения: 1, SO_ERROR=32 (broken pipe)
+t= 63.9s сокет: нет, дескрипторов без TCP-соединения: 1, SO_ERROR=0 (errno 0)
+read 0: n=119 err=<nil>
+read 1: n=0 err=EOF
+## tcpdump: tcp port 18098, время от первого пакета
+ 00:00:00.000000 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [S], seq 3738102261, win 65495, options [mss 65495,sackOK,TS val 2730727128 ecr 0,nop,wscale 10], length 0
+ 00:00:00.000021 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [S.], seq 83853423, ack 3738102262, win 65483, options [mss 65495,sackOK,TS val 590178376 ecr 2730727128,nop,wscale 10], length 0
+ 00:00:00.000032 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 1, win 64, options [nop,nop,TS val 2730727128 ecr 590178376], length 0
+ 00:00:00.000111 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [P.], seq 1:32, ack 1, win 64, options [nop,nop,TS val 2730727128 ecr 590178376], length 31
+ 00:00:00.000119 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [.], ack 32, win 64, options [nop,nop,TS val 590178376 ecr 2730727128], length 0
+ 00:00:00.000285 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [P.], seq 1:120, ack 32, win 64, options [nop,nop,TS val 590178376 ecr 2730727128], length 119
+ 00:00:00.000291 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 120, win 64, options [nop,nop,TS val 2730727128 ecr 590178376], length 0
+ 00:00:02.001479 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [F.], seq 120, ack 32, win 64, options [nop,nop,TS val 590180377 ecr 2730727128], length 0
+ 00:00:02.041823 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 121, win 64, options [nop,nop,TS val 2730729170 ecr 590180377], length 0
+ 00:00:17.041826 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 121, win 64, options [nop,nop,TS val 2730744170 ecr 590180377], length 0
+ 00:00:17.041846 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [.], ack 32, win 64, options [nop,nop,TS val 590195418 ecr 2730729170], length 0
+ 00:00:32.401881 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 121, win 64, options [nop,nop,TS val 2730759530 ecr 590195418], length 0
+ 00:00:32.401904 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [.], ack 32, win 64, options [nop,nop,TS val 590210778 ecr 2730729170], length 0
+ 00:00:47.761837 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 121, win 64, options [nop,nop,TS val 2730774890 ecr 590210778], length 0
+ 00:00:47.761865 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [.], ack 32, win 64, options [nop,nop,TS val 590226138 ecr 2730729170], length 0
+ 00:01:03.121806 IP 127.0.0.1.57644 > 127.0.0.1.18098: Flags [.], ack 121, win 64, options [nop,nop,TS val 2730790250 ecr 590226138], length 0
+ 00:01:03.121843 IP 127.0.0.1.18098 > 127.0.0.1.57644: Flags [R], seq 83853544, win 0, length 0

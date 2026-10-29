@@ -1,0 +1,16 @@
+### close-no-read-big: состояния на порту 28080 через 2 с, клиент ещё жив
+      1 LISTEN server
+### прирост nstat
+TcpActiveOpens                  51                 0.0
+TcpPassiveOpens                 51                 0.0
+TcpEstabResets                  100                0.0
+TcpOutRsts                      50                 0.0
+TcpExtTCPAbortOnClose           50                 0.0
+### close-no-read-big: флаги в захвате
+    506 Flags [.]
+    199 Flags [P.]
+     32 Flags [R.]
+     43 Flags [S.]
+     41 Flags [S]
+### кто слал R и F
+     32 client->server [R.],

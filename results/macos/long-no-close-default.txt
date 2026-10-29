@@ -1,0 +1,43 @@
+# дата: 2026-10-29T12:58:12Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: LAB_PORT=18090 idle=2s bin/golab -raw -for 4m no-close-default
+
+no-close-default       сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: ESTABLISHED=20; горутин: 43
+  +2.1s                сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSE_WAIT=20; горутин: 43
+  +3s                  сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSE_WAIT=20; горутин: 43
+  +6s                  сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSE_WAIT=20; горутин: 43
+  +30s                 сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSE_WAIT=20; горутин: 43
+  +1m2s                сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSED=20; горутин: 43
+  +1m30s               сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSED=20; горутин: 43
+  +4m0s                сервер принял соединений: 20, переиспользовано: 0, новых: 20
+                       сокеты клиента: CLOSED=20; горутин: 43
+COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+golab   74184 jtprogru    5u  IPv4 0x2a664f048f4891a4      0t0  TCP 127.0.0.1:57994->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru    6u  IPv4 0x2be9634f639b1a7c      0t0  TCP 127.0.0.1:57999->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru    7u  IPv4 0x186df99f1afe25a1      0t0  TCP 127.0.0.1:58004->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru    8u  IPv4 0x9b088915a4094b15      0t0  TCP 127.0.0.1:58008->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru    9u  IPv4 0x765985e66ea3ad71      0t0  TCP 127.0.0.1:58012->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   10u  IPv4 0xaf8975bf884ebbda      0t0  TCP 127.0.0.1:58018->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   11u  IPv4 0x4fc5d9efffcbf6a4      0t0  TCP 127.0.0.1:58024->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   12u  IPv4 0xa710ccc4aaedcced      0t0  TCP 127.0.0.1:58029->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   13u  IPv4 0x8342178f7e4286f2      0t0  TCP 127.0.0.1:58034->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   14u  IPv4 0x576b7209b6f5f95c      0t0  TCP 127.0.0.1:58039->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   15u  IPv4 0x1249b8bf66ac3606      0t0  TCP 127.0.0.1:58044->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   16u  IPv4 0x2e6254b00356e376      0t0  TCP 127.0.0.1:58049->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   17u  IPv4 0xfe3dc2780d64cbb3      0t0  TCP 127.0.0.1:58054->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   18u  IPv4 0xc0f81733a8e5385e      0t0  TCP 127.0.0.1:58059->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   19u  IPv4 0x4ef27804c2075d51      0t0  TCP 127.0.0.1:58063->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   20u  IPv4 0x999e2bf95ab307ea      0t0  TCP 127.0.0.1:58068->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   21u  IPv4 0xb63a5d9b8cf61bdc      0t0  TCP 127.0.0.1:58073->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   22u  IPv4 0x426a8524d6d882a1      0t0  TCP 127.0.0.1:58078->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   23u  IPv4 0xbc41689a1ba47152      0t0  TCP 127.0.0.1:58083->127.0.0.1:18090 (CLOSED)
+golab   74184 jtprogru   24u  IPv4 0x1aab55da64e0f447      0t0  TCP 127.0.0.1:58087->127.0.0.1:18090 (CLOSED)

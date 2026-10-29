@@ -1,0 +1,23 @@
+# дата: 2026-10-29T13:01:36Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: LAB_PORT=18100 idle=2s scripts/rst-capture.sh 18100 bin/golab -for 100s -ka -1s probe
+
+t=  0.0s сокет: ESTABLISHED=1, SO_ERROR=0 (errno 0)
+t=  2.0s сокет: CLOSE_WAIT=1, SO_ERROR=0 (errno 0)
+read 0: n=119 err=<nil>
+read 1: n=0 err=EOF
+## tcpdump: tcp port 18100, время от первого пакета
+ 00:00:00.000000 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [S], seq 1898341882, win 65495, options [mss 65495,sackOK,TS val 2170922903 ecr 0,nop,wscale 10], length 0
+ 00:00:00.000016 IP 127.0.0.1.18100 > 127.0.0.1.41640: Flags [S.], seq 2165959063, ack 1898341883, win 65483, options [mss 65495,sackOK,TS val 3615019186 ecr 2170922903,nop,wscale 10], length 0
+ 00:00:00.000026 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [.], ack 1, win 64, options [nop,nop,TS val 2170922903 ecr 3615019186], length 0
+ 00:00:00.000173 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [P.], seq 1:32, ack 1, win 64, options [nop,nop,TS val 2170922904 ecr 3615019186], length 31
+ 00:00:00.000184 IP 127.0.0.1.18100 > 127.0.0.1.41640: Flags [.], ack 32, win 64, options [nop,nop,TS val 3615019187 ecr 2170922904], length 0
+ 00:00:00.000351 IP 127.0.0.1.18100 > 127.0.0.1.41640: Flags [P.], seq 1:120, ack 32, win 64, options [nop,nop,TS val 3615019187 ecr 2170922904], length 119
+ 00:00:00.000360 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [.], ack 120, win 64, options [nop,nop,TS val 2170922904 ecr 3615019187], length 0
+ 00:00:02.000786 IP 127.0.0.1.18100 > 127.0.0.1.41640: Flags [F.], seq 120, ack 32, win 64, options [nop,nop,TS val 3615021187 ecr 2170922904], length 0
+ 00:00:02.041123 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [.], ack 121, win 64, options [nop,nop,TS val 2170924945 ecr 3615021187], length 0
+ 00:01:40.122502 IP 127.0.0.1.41640 > 127.0.0.1.18100: Flags [F.], seq 32, ack 121, win 64, options [nop,nop,TS val 2171023026 ecr 3615021187], length 0
+ 00:01:40.122530 IP 127.0.0.1.18100 > 127.0.0.1.41640: Flags [R], seq 2165959184, win 0, length 0

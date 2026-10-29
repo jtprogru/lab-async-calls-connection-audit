@@ -1,0 +1,13 @@
+# дата: 2026-10-29T13:02:43Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: scripts/asyncio-ps.sh
+
+## python -m asyncio ps 84994 (uid 501)
+Error: The specified process cannot be attached to due to insufficient permissions.
+See the Python documentation for details on required privileges and troubleshooting:
+https://docs.python.org/3.14/howto/remote_debugging.html#permission-requirements
+
+## python -m asyncio ps 84994 от root
+sudo без пароля нет, пропущено

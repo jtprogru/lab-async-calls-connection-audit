@@ -1,0 +1,15 @@
+# дата: 2026-10-29T12:57:23Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python pylab.py fire-and-forget
+
+[ 0.0 с] handler вернул: 201 Created
+Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<send_receipt() done, defined at /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:85> exception=RuntimeError('SMS-провайдер ответил 503 для заказа 42')>
+Traceback (most recent call last):
+  File "/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py", line 87, in send_receipt
+    raise RuntimeError(f"SMS-провайдер ответил 503 для заказа {order_id}")
+RuntimeError: SMS-провайдер ответил 503 для заказа 42
+[ 1.0 с] ждём ещё секунду, ошибки никто не видел
+[ 2.0 с] конец

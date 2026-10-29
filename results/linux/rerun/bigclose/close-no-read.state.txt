@@ -1,0 +1,19 @@
+### close-no-read: состояния на порту 28080 через 2 с, клиент ещё жив
+      1 ESTAB client
+      1 ESTAB server
+      1 LISTEN server
+### прирост nstat
+TcpActiveOpens                  2                  0.0
+TcpPassiveOpens                 2                  0.0
+TcpEstabResets                  0                  0.0
+TcpOutRsts                      0                  0.0
+TcpExtTCPAbortOnClose           0                  0.0
+### close-no-read: флаги в захвате
+      5 Flags [.]
+      2 Flags [F.]
+    100 Flags [P.]
+      1 Flags [S.]
+      1 Flags [S]
+### кто слал R и F
+      1 client->server [F.],
+      1 server->client [F.],

@@ -1,0 +1,32 @@
+# дата: 2026-10-29T12:56:19Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bin/golab -dump transport-per-call
+
+transport-per-call     сервер принял соединений: 50, переиспользовано: 0, новых: 50
+                       сокеты клиента: ESTABLISHED=50; горутин: 103
+goroutine profile: total 103
+51 @ 0x102302f78 0x1022c7640 0x1023021b0 0x102349fc8 0x10234aa8c 0x10234aa7d 0x1023ca8d8 0x1023d1eb4 0x1024d0278 0x10246f2dc 0x10246f418 0x1024d0e40 0x102309ff4
+#	0x1023021af	internal/poll.runtime_pollWait+0x9f		/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/netpoll.go:351
+#	0x102349fc7	internal/poll.(*pollDesc).wait+0x27		/opt/homebrew/Cellar/go/1.27.3/libexec/src/internal/poll/fd_poll_runtime.go:84
+#	0x10234aa8b	internal/poll.(*pollDesc).waitRead+0x22b	/opt/homebrew/Cellar/go/1.27.3/libexec/src/internal/poll/fd_poll_runtime.go:89
+#	0x10234aa7c	internal/poll.(*FD).Read+0x21c			/opt/homebrew/Cellar/go/1.27.3/libexec/src/internal/poll/fd_unix.go:170
+#	0x1023ca8d7	net.(*netFD).Read+0x27				/opt/homebrew/Cellar/go/1.27.3/libexec/src/net/fd_posix.go:68
+#	0x1023d1eb3	net.(*conn).Read+0x33				/opt/homebrew/Cellar/go/1.27.3/libexec/src/net/net.go:196
+#	0x1024d0277	net/http.(*persistConn).Read+0x47		/opt/homebrew/Cellar/go/1.27.3/libexec/src/net/http/transport.go:2300
+#	0x10246f2db	bufio.(*Reader).fill+0xdb			/opt/homebrew/Cellar/go/1.27.3/libexec/src/bufio/bufio.go:113
+#	0x10246f417	bufio.(*Reader).Peek+0x57			/opt/homebrew/Cellar/go/1.27.3/libexec/src/bufio/bufio.go:152
+#	0x1024d0e3f	net/http.(*persistConn).readLoop+0x11f		/opt/homebrew/Cellar/go/1.27.3/libexec/src/net/http/transport.go:2493
+
+51 @ 0x102302f78 0x1022dff88 0x1024d22e8 0x102309ff4
+#	0x1024d22e7	net/http.(*persistConn).writeLoop+0x97	/opt/homebrew/Cellar/go/1.27.3/libexec/src/net/http/transport.go:2833
+
+1 @ 0x1022c416c 0x102301d44 0x1024e0764 0x1024e0410 0x1024ddc74 0x1024f2dec 0x1024f2800 0x1022cd830 0x102309ff4
+#	0x1024e0763	runtime/pprof.writeRuntimeProfile+0xb3	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:848
+#	0x1024e040f	runtime/pprof.writeGoroutine+0x4f	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:781
+#	0x1024ddc73	runtime/pprof.(*Profile).WriteTo+0x143	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:405
+#	0x1024f2deb	main.transportPerCall+0x11b		/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/go/cmd/golab/main.go:222
+#	0x1024f27ff	main.main+0x5bf				/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/go/cmd/golab/main.go:159
+#	0x1022cd82f	runtime.main+0x37f			/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/proc.go:302
+

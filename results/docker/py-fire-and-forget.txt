@@ -1,0 +1,16 @@
+# дата: 2026-10-29T13:03:51Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python pylab.py fire-and-forget
+
+[ 0.0 с] handler вернул: 201 Created
+Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<send_receipt() done, defined at /lab/python/pylab.py:85> exception=RuntimeError('SMS-провайдер ответил 503 для заказа 42')>
+Traceback (most recent call last):
+  File "/lab/python/pylab.py", line 87, in send_receipt
+    raise RuntimeError(f"SMS-провайдер ответил 503 для заказа {order_id}")
+RuntimeError: SMS-провайдер ответил 503 для заказа 42
+[ 1.0 с] ждём ещё секунду, ошибки никто не видел
+[ 2.0 с] конец

@@ -1,0 +1,8 @@
+# дата: 2026-10-29T13:03:37Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bin/golab maxconns-notimeout
+
+четвёртый запрос висит уже 10 с и будет висеть дальше; сервер обслужил запросов: 3

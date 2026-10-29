@@ -1,0 +1,10 @@
+# дата: 2026-10-29T13:03:49Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python pylab.py pool-timeout
+
+четвёртый запрос через 2.0 с: httpx.PoolTimeout: PoolTimeout('')
+сервер обслужил запросов: 3
+исправлено через async with: 10 запросов прошли, сервер принял соединений: 10

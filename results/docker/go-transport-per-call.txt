@@ -1,0 +1,33 @@
+# дата: 2026-10-29T13:02:47Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bin/golab -dump transport-per-call
+
+transport-per-call     сервер принял соединений: 50, переиспользовано: 0, новых: 50
+                       сокеты клиента: ESTABLISHED=50; горутин: 103
+goroutine profile: total 103
+51 @ 0x94a18 0x57e00 0x93c10 0xdac48 0xdb59c 0xdb58d 0x159c08 0x161604 0x25e478 0x1fd4dc 0x1fd618 0x25f040 0x9b834
+#	0x93c0f		internal/poll.runtime_pollWait+0x9f		/usr/local/go/src/runtime/netpoll.go:351
+#	0xdac47		internal/poll.(*pollDesc).wait+0x27		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0xdb59b		internal/poll.(*pollDesc).waitRead+0x22b	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0xdb58c		internal/poll.(*FD).Read+0x21c			/usr/local/go/src/internal/poll/fd_unix.go:170
+#	0x159c07	net.(*netFD).Read+0x27				/usr/local/go/src/net/fd_posix.go:68
+#	0x161603	net.(*conn).Read+0x33				/usr/local/go/src/net/net.go:196
+#	0x25e477	net/http.(*persistConn).Read+0x47		/usr/local/go/src/net/http/transport.go:2300
+#	0x1fd4db	bufio.(*Reader).fill+0xdb			/usr/local/go/src/bufio/bufio.go:113
+#	0x1fd617	bufio.(*Reader).Peek+0x57			/usr/local/go/src/bufio/bufio.go:152
+#	0x25f03f	net/http.(*persistConn).readLoop+0x11f		/usr/local/go/src/net/http/transport.go:2493
+
+51 @ 0x94a18 0x71048 0x2604e8 0x9b834
+#	0x2604e7	net/http.(*persistConn).writeLoop+0x97	/usr/local/go/src/net/http/transport.go:2833
+
+1 @ 0x5492c 0x937a4 0x26f124 0x26edd0 0x26c634 0x27e1e0 0x27dbbc 0x5e880 0x9b834
+#	0x26f123	runtime/pprof.writeRuntimeProfile+0xb3	/usr/local/go/src/runtime/pprof/pprof.go:848
+#	0x26edcf	runtime/pprof.writeGoroutine+0x4f	/usr/local/go/src/runtime/pprof/pprof.go:781
+#	0x26c633	runtime/pprof.(*Profile).WriteTo+0x143	/usr/local/go/src/runtime/pprof/pprof.go:405
+#	0x27e1df	main.transportPerCall+0x12f		/lab/go/cmd/golab/main.go:222
+#	0x27dbbb	main.main+0x5fb				/lab/go/cmd/golab/main.go:159
+#	0x5e87f		runtime.main+0x37f			/usr/local/go/src/runtime/proc.go:302
+

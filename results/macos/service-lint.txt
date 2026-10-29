@@ -1,0 +1,133 @@
+# дата: 2026-10-29T12:58:10Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: make service-lint
+
+## go vet
+internal/legacy/status.go:13:8: using resp before checking for errors
+## golangci-lint
+internal/checkout/refund.go:11:24: response body must be closed (bodyclose)
+	resp, err := http.Post("http://payments.internal/refund", "application/json",
+	                      ^
+cmd/orders/main.go:24:2: Non-inherited new context, use function like `context.WithXXX` or `r.Context` instead (contextcheck)
+	go notify(context.Background(), id) // отвязан от запроса намеренно?
+	^
+cmd/orders/main.go:20:21: Error return value of `checkout.Refund` is not checked (errcheck)
+		go checkout.Refund(id) // fire-and-forget: ошибку никто не увидит
+		                  ^
+cmd/orders/main.go:35:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+cmd/orders/main.go:41:14: Error return value of `fmt.Fprintf` is not checked (errcheck)
+		fmt.Fprintf(w, "ok\n")
+		           ^
+internal/inventory/reserve.go:15:13: Error return value of `fmt.Fprintf` is not checked (errcheck)
+	fmt.Fprintf(conn, "RESERVE %s %d\n", sku, qty)
+	           ^
+internal/legacy/status.go:13:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+internal/payments/client.go:26:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+internal/store/orders.go:11:16: Error return value of `db.Close` is not checked (errcheck)
+	defer db.Close()
+	              ^
+internal/inventory/reserve.go:11:23: net.Dial must not be called. use (*net.Dialer).DialContext (noctx)
+	conn, err := net.Dial("tcp", "inventory.internal:7000")
+	                     ^
+internal/legacy/status.go:12:20: (*net/http.Client).Get must not be called. use (*net/http.Client).Do(*http.Request) (noctx)
+	resp, err := c.Get(baseURL + "/status/" + id)
+	                  ^
+internal/store/orders.go:13:19: (*database/sql.DB).QueryRow must not be called. use (*database/sql.DB).QueryRowContext (noctx)
+	err = db.QueryRow("SELECT status FROM orders WHERE id = $1", id).Scan(&status)
+	                 ^
+12 issues:
+* bodyclose: 1
+* contextcheck: 1
+* errcheck: 7
+* noctx: 3
+## golangci-lint --uniq-by-line=false
+internal/checkout/refund.go:11:24: response body must be closed (bodyclose)
+	resp, err := http.Post("http://payments.internal/refund", "application/json",
+	                      ^
+cmd/orders/main.go:24:2: Non-inherited new context, use function like `context.WithXXX` or `r.Context` instead (contextcheck)
+	go notify(context.Background(), id) // отвязан от запроса намеренно?
+	^
+cmd/orders/main.go:20:21: Error return value of `checkout.Refund` is not checked (errcheck)
+		go checkout.Refund(id) // fire-and-forget: ошибку никто не увидит
+		                  ^
+cmd/orders/main.go:35:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+cmd/orders/main.go:41:14: Error return value of `fmt.Fprintf` is not checked (errcheck)
+		fmt.Fprintf(w, "ok\n")
+		           ^
+internal/inventory/reserve.go:15:13: Error return value of `fmt.Fprintf` is not checked (errcheck)
+	fmt.Fprintf(conn, "RESERVE %s %d\n", sku, qty)
+	           ^
+internal/legacy/status.go:13:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+internal/payments/client.go:26:23: Error return value of `resp.Body.Close` is not checked (errcheck)
+	defer resp.Body.Close()
+	                     ^
+internal/store/orders.go:11:16: Error return value of `db.Close` is not checked (errcheck)
+	defer db.Close()
+	              ^
+internal/checkout/refund.go:11:24: net/http.Post must not be called. use net/http.NewRequestWithContext and (*net/http.Client).Do(*http.Request) (noctx)
+	resp, err := http.Post("http://payments.internal/refund", "application/json",
+	                      ^
+internal/inventory/reserve.go:11:23: net.Dial must not be called. use (*net.Dialer).DialContext (noctx)
+	conn, err := net.Dial("tcp", "inventory.internal:7000")
+	                     ^
+internal/legacy/status.go:12:20: (*net/http.Client).Get must not be called. use (*net/http.Client).Do(*http.Request) (noctx)
+	resp, err := c.Get(baseURL + "/status/" + id)
+	                  ^
+internal/store/orders.go:13:19: (*database/sql.DB).QueryRow must not be called. use (*database/sql.DB).QueryRowContext (noctx)
+	err = db.QueryRow("SELECT status FROM orders WHERE id = $1", id).Scan(&status)
+	                 ^
+13 issues:
+* bodyclose: 1
+* contextcheck: 1
+* errcheck: 7
+* noctx: 4
+## ruff
+RUF006 Store a reference to the return value of `asyncio.create_task`
+  --> notifier/handlers.py:12:5
+   |
+10 |         return
+11 |     # обе задачи без сохранённой ссылки
+12 |     asyncio.create_task(send_sms(event["phone"], "Заказ оплачен"))
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 |     asyncio.create_task(send_email(event["email"], "Заказ оплачен"))
+   |
+
+RUF006 Store a reference to the return value of `asyncio.create_task`
+  --> notifier/handlers.py:13:5
+   |
+11 |     # обе задачи без сохранённой ссылки
+12 |     asyncio.create_task(send_sms(event["phone"], "Заказ оплачен"))
+13 |     asyncio.create_task(send_email(event["email"], "Заказ оплачен"))
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ASYNC210 Async functions should not call blocking HTTP methods
+ --> notifier/sms.py:7:12
+  |
+6 | async def send_sms(phone: str, text: str) -> None:
+7 |     resp = requests.post(SMS_URL, json={"phone": phone, "text": text})
+  |            ^^^^^^^^^^^^^
+8 |     resp.raise_for_status()
+  |
+
+S113 Probable use of `requests` call without timeout
+ --> notifier/sms.py:7:12
+  |
+6 | async def send_sms(phone: str, text: str) -> None:
+7 |     resp = requests.post(SMS_URL, json={"phone": phone, "text": text})
+  |            ^^^^^^^^^^^^^
+8 |     resp.raise_for_status()
+  |
+
+Found 4 errors.

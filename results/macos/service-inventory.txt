@@ -1,0 +1,23 @@
+# дата: 2026-10-29T12:58:10Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: make service-inventory
+
+## Go
+./cmd/orders/main.go:20:		go checkout.Refund(id) // fire-and-forget: ошибку никто не увидит
+./cmd/orders/main.go:24:	go notify(context.Background(), id) // отвязан от запроса намеренно?
+./cmd/orders/main.go:29:	req, _ := http.NewRequestWithContext(ctx, http.MethodPost, "http://notifier.internal/order/"+id, nil)
+./cmd/orders/main.go:30:	resp, err := http.DefaultClient.Do(req)
+./internal/checkout/refund.go:11:	resp, err := http.Post("http://payments.internal/refund", "application/json",
+./internal/inventory/reserve.go:11:	conn, err := net.Dial("tcp", "inventory.internal:7000")
+./internal/legacy/status.go:11:	c := &http.Client{Transport: &http.Transport{MaxIdleConns: 10}}
+./internal/payments/client.go:14:var Client = &http.Client{Timeout: 3 * time.Second}
+./internal/payments/client.go:17:	req, err := http.NewRequestWithContext(ctx, http.MethodPost, baseURL+"/charge",
+./internal/store/orders.go:7:	db, err := sql.Open("pgx", dsn)
+## Python
+./notifier/email.py:5:    session = aiohttp.ClientSession()
+./notifier/handlers.py:12:    asyncio.create_task(send_sms(event["phone"], "Заказ оплачен"))
+./notifier/handlers.py:13:    asyncio.create_task(send_email(event["email"], "Заказ оплачен"))
+./notifier/payments.py:5:    async with httpx.AsyncClient() as client:  # новый пул на каждый вызов
+./notifier/sms.py:7:    resp = requests.post(SMS_URL, json={"phone": phone, "text": text})

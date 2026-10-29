@@ -1,0 +1,15 @@
+# дата: 2026-10-29T13:04:21Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: scripts/asyncio-ps.sh
+
+## python -m asyncio ps 869 (uid 0)
+tid        task id              task name            coroutine stack                                    awaiter chain                                      awaiter name    awaiter id     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+869        0xffff81cd3110       Task-1               main                                                                                                                  0x0            
+869        0xffff8187c960       order-0              Event.wait -> SocketStream.receive -> AnyIOStream.read -> AsyncHTTP11Connection._receive_event -> AsyncHTTP11Connection._receive_response_headers -> AsyncHTTP11Connection.handle_async_request -> AsyncHTTPConnection.handle_async_request -> AsyncConnectionPool.handle_async_request -> AsyncHTTPTransport.handle_async_request -> AsyncClient._send_single_request -> AsyncClient._send_handling_redirects -> AsyncClient._send_handling_auth -> AsyncClient.send -> AsyncClient.request -> AsyncClient.get -> handle_order main                                               Task-1          0xffff81cd3110 
+869        0xffff8187cb30       audit-0              Event.wait -> SocketStream.receive -> AnyIOStream.read -> AsyncHTTP11Connection._receive_event -> AsyncHTTP11Connection._receive_response_headers -> AsyncHTTP11Connection.handle_async_request -> AsyncHTTPConnection.handle_async_request -> AsyncConnectionPool.handle_async_request -> AsyncHTTPTransport.handle_async_request -> AsyncClient._send_single_request -> AsyncClient._send_handling_redirects -> AsyncClient._send_handling_auth -> AsyncClient.send -> AsyncClient.request -> AsyncClient.get -> audit                                                                    0x0            
+## python -m asyncio ps 869 от root
+уже root, см. выше

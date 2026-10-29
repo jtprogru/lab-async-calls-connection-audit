@@ -1,0 +1,33 @@
+# дата: 2026-10-29T12:59:57Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bin/golab -dump transport-per-call
+
+transport-per-call     сервер принял соединений: 50, переиспользовано: 0, новых: 50
+                       сокеты клиента: ESTABLISHED=50; горутин: 103
+goroutine profile: total 103
+51 @ 0x4888aa 0x44a417 0x487aa5 0x4d4d87 0x4d5788 0x4d5776 0x568625 0x570d45 0x69b827 0x62ee43 0x62ef72 0x69c3de 0x48f521
+#	0x487aa4	internal/poll.runtime_pollWait+0x84		/home/user/sdk/go/src/runtime/netpoll.go:351
+#	0x4d4d86	internal/poll.(*pollDesc).wait+0x26		/home/user/sdk/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4d5787	internal/poll.(*pollDesc).waitRead+0x2a7	/home/user/sdk/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4d5775	internal/poll.(*FD).Read+0x295			/home/user/sdk/go/src/internal/poll/fd_unix.go:170
+#	0x568624	net.(*netFD).Read+0x24				/home/user/sdk/go/src/net/fd_posix.go:68
+#	0x570d44	net.(*conn).Read+0x44				/home/user/sdk/go/src/net/net.go:196
+#	0x69b826	net/http.(*persistConn).Read+0x46		/home/user/sdk/go/src/net/http/transport.go:2300
+#	0x62ee42	bufio.(*Reader).fill+0x102			/home/user/sdk/go/src/bufio/bufio.go:113
+#	0x62ef71	bufio.(*Reader).Peek+0x51			/home/user/sdk/go/src/bufio/bufio.go:152
+#	0x69c3dd	net/http.(*persistConn).readLoop+0x17d		/home/user/sdk/go/src/net/http/transport.go:2493
+
+51 @ 0x4888aa 0x463577 0x69dba6 0x48f521
+#	0x69dba5	net/http.(*persistConn).writeLoop+0xe5	/home/user/sdk/go/src/net/http/transport.go:2833
+
+1 @ 0x446f91 0x48767d 0x6ae7f1 0x6ae4c5 0x6ab429 0x6c222b 0x6c1b71 0x451387 0x48f521
+#	0x6ae7f0	runtime/pprof.writeRuntimeProfile+0xb0	/home/user/sdk/go/src/runtime/pprof/pprof.go:848
+#	0x6ae4c4	runtime/pprof.writeGoroutine+0x44	/home/user/sdk/go/src/runtime/pprof/pprof.go:781
+#	0x6ab428	runtime/pprof.(*Profile).WriteTo+0x148	/home/user/sdk/go/src/runtime/pprof/pprof.go:405
+#	0x6c222a	main.transportPerCall+0x12a		/home/user/lab/go/cmd/golab/main.go:222
+#	0x6c1b70	main.main+0x4b0				/home/user/lab/go/cmd/golab/main.go:159
+#	0x451386	runtime.main+0x426			/home/user/sdk/go/src/runtime/proc.go:302
+

@@ -1,0 +1,17 @@
+# дата: 2026-10-29T13:02:57Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: scripts/nstat.sh bin/golab -tw close-no-read-big
+
+close-no-read-big      сервер принял соединений: 50, переиспользовано: 0, новых: 50
+                       сокеты клиента: нет; горутин: 3
+                       TIME_WAIT к порту 18112 через 1 с: на стороне клиента 0, на стороне сервера 0
+## nstat: прирост счётчиков за время команды
+TcpEstabResets             100
+TcpOutRsts                 50
+TcpExtTW                   1
+TcpExtTCPAbortOnData       0
+TcpExtTCPAbortOnClose      50
+TcpExtTCPAbortOnTimeout    0

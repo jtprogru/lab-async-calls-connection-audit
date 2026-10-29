@@ -1,0 +1,9 @@
+# дата: 2026-10-29T13:00:05Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bin/golab read-no-close
+
+read-no-close          сервер принял соединений: 1, переиспользовано: 49, новых: 1
+                       сокеты клиента: ESTABLISHED=1; горутин: 5

@@ -1,0 +1,47 @@
+# дата: 2026-10-29T12:57:51Z
+# ОС: macOS 27.0.1, ядро 27.0.0 arm64
+# go version go1.27.3 darwin/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python callgraph.py
+
+PID 73505
+* Task(name='audit-0', id=0x10b140b30)
+  + Call stack:
+  |   File '/Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/locks.py', line 213, in async Event.wait()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py', line 1407, in async SocketStream.receive()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_backends/anyio.py', line 35, in async AnyIOStream.read()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 217, in async AsyncHTTP11Connection._receive_event()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 177, in async AsyncHTTP11Connection._receive_response_headers()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 106, in async AsyncHTTP11Connection.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/connection.py', line 103, in async AsyncHTTPConnection.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/connection_pool.py', line 236, in async AsyncConnectionPool.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_transports/default.py', line 394, in async AsyncHTTPTransport.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1730, in async AsyncClient._send_single_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1694, in async AsyncClient._send_handling_redirects()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1657, in async AsyncClient._send_handling_auth()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1629, in async AsyncClient.send()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1540, in async AsyncClient.request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1768, in async AsyncClient.get()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/callgraph.py', line 7, in async audit()
+* Task(name='order-0', id=0x10b140960)
+  + Call stack:
+  |   File '/Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/locks.py', line 213, in async Event.wait()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py', line 1407, in async SocketStream.receive()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_backends/anyio.py', line 35, in async AnyIOStream.read()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 217, in async AsyncHTTP11Connection._receive_event()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 177, in async AsyncHTTP11Connection._receive_response_headers()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/http11.py', line 106, in async AsyncHTTP11Connection.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/connection.py', line 103, in async AsyncHTTPConnection.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpcore/_async/connection_pool.py', line 236, in async AsyncConnectionPool.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_transports/default.py', line 394, in async AsyncHTTPTransport.handle_async_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1730, in async AsyncClient._send_single_request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1694, in async AsyncClient._send_handling_redirects()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1657, in async AsyncClient._send_handling_auth()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1629, in async AsyncClient.send()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1540, in async AsyncClient.request()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/.venv/lib/python3.14/site-packages/httpx/_client.py', line 1768, in async AsyncClient.get()
+  |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/callgraph.py', line 11, in async handle_order()
+  + Awaited by:
+    * Task(name='Task-1', id=0x10ad8f2f0)
+      + Call stack:
+      |   File '/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/callgraph.py', line 25, in async main()

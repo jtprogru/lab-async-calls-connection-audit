@@ -1,0 +1,10 @@
+# дата: 2026-10-29T13:01:12Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python pylab.py blocking
+
+requests  10 «параллельных» запросов по 300 мс: 3.03 с
+httpx     10 «параллельных» запросов по 300 мс: 0.34 с
+to_thread 10 «параллельных» запросов по 300 мс: 0.61 с

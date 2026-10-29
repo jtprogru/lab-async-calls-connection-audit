@@ -1,0 +1,23 @@
+# дата: 2026-10-29T13:04:23Z
+# ОС: Debian GNU/Linux 13 (trixie), ядро 6.10.14-linuxkit aarch64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/arm64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: LAB_PORT=18100 idle=2s scripts/rst-capture.sh 18100 bin/golab -for 100s -ka -1s probe
+
+t=  0.0s сокет: ESTABLISHED=1, SO_ERROR=0 (errno 0)
+t=  2.0s сокет: CLOSE_WAIT=1, SO_ERROR=0 (errno 0)
+read 0: n=119 err=<nil>
+read 1: n=0 err=EOF
+## tcpdump: tcp port 18100, время от первого пакета
+ 00:00:00.000000 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [S], seq 3104938875, win 65495, options [mss 65495,sackOK,TS val 949330446 ecr 0,nop,wscale 7], length 0
+ 00:00:00.000008 IP 127.0.0.1.18100 > 127.0.0.1.44696: Flags [S.], seq 3948129443, ack 3104938876, win 65483, options [mss 65495,sackOK,TS val 949330446 ecr 949330446,nop,wscale 7], length 0
+ 00:00:00.000014 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [.], ack 1, win 512, options [nop,nop,TS val 949330446 ecr 949330446], length 0
+ 00:00:00.000057 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [P.], seq 1:32, ack 1, win 512, options [nop,nop,TS val 949330446 ecr 949330446], length 31
+ 00:00:00.000060 IP 127.0.0.1.18100 > 127.0.0.1.44696: Flags [.], ack 32, win 512, options [nop,nop,TS val 949330446 ecr 949330446], length 0
+ 00:00:00.000988 IP 127.0.0.1.18100 > 127.0.0.1.44696: Flags [P.], seq 1:120, ack 32, win 512, options [nop,nop,TS val 949330447 ecr 949330446], length 119
+ 00:00:00.001008 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [.], ack 120, win 512, options [nop,nop,TS val 949330447 ecr 949330447], length 0
+ 00:00:02.003004 IP 127.0.0.1.18100 > 127.0.0.1.44696: Flags [F.], seq 120, ack 32, win 512, options [nop,nop,TS val 949332449 ecr 949330447], length 0
+ 00:00:02.043936 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [.], ack 121, win 512, options [nop,nop,TS val 949332490 ecr 949332449], length 0
+ 00:01:40.242168 IP 127.0.0.1.44696 > 127.0.0.1.18100: Flags [F.], seq 32, ack 121, win 512, options [nop,nop,TS val 949430687 ecr 949332449], length 0
+ 00:01:40.242194 IP 127.0.0.1.18100 > 127.0.0.1.44696: Flags [R], seq 3948129564, win 0, length 0

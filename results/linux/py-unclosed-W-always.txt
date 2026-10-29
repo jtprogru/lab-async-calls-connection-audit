@@ -1,0 +1,51 @@
+# дата: 2026-10-29T13:01:25Z
+# ОС: Ubuntu 26.04.1 LTS, ядро 7.0.0-34-generic x86_64
+# net.ipv4.tcp_fin_timeout=60
+# go version go1.27.3 linux/amd64
+# Python 3.14.6 httpx 0.28.1 requests 2.34.2
+# команда: bash -c cd python && uv run --frozen python -W always::ResourceWarning pylab.py unclosed 2>&1 | sort | uniq -c | sort -rn
+
+     39 ResourceWarning: Enable tracemalloc to get the object allocation traceback
+     20   _warn(f"unclosed transport {self!r}", ResourceWarning, source=self)
+     19   gc.collect()
+      1 client-unclosed      сервер принял соединений: 20, сокеты клиента: ESTABLISHED=20
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=9, family=2, type=1, proto=6, laddr=('127.0.0.1', 60168), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=8, family=2, type=1, proto=6, laddr=('127.0.0.1', 60156), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=7, family=2, type=1, proto=6, laddr=('127.0.0.1', 60142), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=6, family=2, type=1, proto=6, laddr=('127.0.0.1', 60138), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=24, family=2, type=1, proto=6, laddr=('127.0.0.1', 60250), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=23, family=2, type=1, proto=6, laddr=('127.0.0.1', 60242), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=22, family=2, type=1, proto=6, laddr=('127.0.0.1', 60232), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=21, family=2, type=1, proto=6, laddr=('127.0.0.1', 60230), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=20, family=2, type=1, proto=6, laddr=('127.0.0.1', 60222), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=19, family=2, type=1, proto=6, laddr=('127.0.0.1', 60220), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=18, family=2, type=1, proto=6, laddr=('127.0.0.1', 60216), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=17, family=2, type=1, proto=6, laddr=('127.0.0.1', 60212), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=16, family=2, type=1, proto=6, laddr=('127.0.0.1', 60206), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=15, family=2, type=1, proto=6, laddr=('127.0.0.1', 60204), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 60194), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=13, family=2, type=1, proto=6, laddr=('127.0.0.1', 60184), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=12, family=2, type=1, proto=6, laddr=('127.0.0.1', 60180), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=11, family=2, type=1, proto=6, laddr=('127.0.0.1', 60178), raddr=('127.0.0.1', 18080)>
+      1 /home/user/lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 60170), raddr=('127.0.0.1', 18080)>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=9 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=8 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=7 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=6 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=25>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=24 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=23 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=22 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=21 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=20 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=19 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=18 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=17 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=16 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=15 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=14 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=13 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=12 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=11 read=idle write=<idle, bufsize=0>>
+      1 /home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=10 read=idle write=<idle, bufsize=0>>
+      1   после gc.collect() сервер принял соединений: 20, сокеты клиента: ESTABLISHED=1
