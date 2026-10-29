@@ -2,7 +2,7 @@
 # TIME_WAIT и orphan FIN_WAIT2 при разных tcp_fin_timeout, в отдельном netns,
 # чтобы не трогать sysctl хоста. Запускать с sudo: sudo run-timewait.sh <fin_timeout>
 set -u
-FT=$1; NS=deep$FT; B=/home/user/deep/bin; L=/home/user/deep/logs/tw-ft$FT; mkdir -p $L
+FT=$1; NS=deep$FT; B=~/deep/bin; L=~/deep/logs/tw-ft$FT; mkdir -p $L
 ip netns add $NS 2>/dev/null; ip netns exec $NS ip link set lo up
 ip netns exec $NS sysctl -w net.ipv4.tcp_fin_timeout=$FT
 X="ip netns exec $NS"

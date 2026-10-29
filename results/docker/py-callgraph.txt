@@ -23,7 +23,7 @@ PID 775
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1629, in async AsyncClient.send()
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1540, in async AsyncClient.request()
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1768, in async AsyncClient.get()
-  |   File '/lab/python/callgraph.py', line 7, in async audit()
+  |   File 'python/callgraph.py', line 7, in async audit()
 * Task(name='order-0', id=0xffffab83c960)
   + Call stack:
   |   File '/opt/uv-python/cpython-3.14.6-linux-aarch64-gnu/lib/python3.14/asyncio/locks.py', line 213, in async Event.wait()
@@ -41,8 +41,8 @@ PID 775
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1629, in async AsyncClient.send()
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1540, in async AsyncClient.request()
   |   File '/opt/venv/lib/python3.14/site-packages/httpx/_client.py', line 1768, in async AsyncClient.get()
-  |   File '/lab/python/callgraph.py', line 11, in async handle_order()
+  |   File 'python/callgraph.py', line 11, in async handle_order()
   + Awaited by:
     * Task(name='Task-1', id=0xffffabc93110)
       + Call stack:
-      |   File '/lab/python/callgraph.py', line 25, in async main()
+      |   File 'python/callgraph.py', line 25, in async main()

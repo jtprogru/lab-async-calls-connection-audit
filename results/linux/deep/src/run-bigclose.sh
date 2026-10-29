@@ -2,7 +2,7 @@
 # Close недочитанного мегабайта: FIN или RST, и где копится TIME_WAIT.
 # Отдельный netns, чтобы счётчики nstat и ss видели только этот прогон. sudo run-bigclose.sh
 set -u
-NS=deepbig; B=/home/user/deep/bin; L=/home/user/deep/logs/bigclose; mkdir -p $L
+NS=deepbig; B=~/deep/bin; L=~/deep/logs/bigclose; mkdir -p $L
 ip netns add $NS 2>/dev/null; ip netns exec $NS ip link set lo up
 X="ip netns exec $NS"
 $X $B/target -addr 127.0.0.1:28080 -stats 127.0.0.1:28081 >$L/target.log 2>&1 &

@@ -27,7 +27,7 @@ goroutine profile: total 103
 #	0x26f123	runtime/pprof.writeRuntimeProfile+0xb3	/usr/local/go/src/runtime/pprof/pprof.go:848
 #	0x26edcf	runtime/pprof.writeGoroutine+0x4f	/usr/local/go/src/runtime/pprof/pprof.go:781
 #	0x26c633	runtime/pprof.(*Profile).WriteTo+0x143	/usr/local/go/src/runtime/pprof/pprof.go:405
-#	0x27e1df	main.transportPerCall+0x12f		/lab/go/cmd/golab/main.go:222
-#	0x27dbbb	main.main+0x5fb				/lab/go/cmd/golab/main.go:159
+#	0x27e1df	main.transportPerCall+0x12f		go/cmd/golab/main.go:222
+#	0x27dbbb	main.main+0x5fb				go/cmd/golab/main.go:159
 #	0x5e87f		runtime.main+0x37f			/usr/local/go/src/runtime/proc.go:302
 

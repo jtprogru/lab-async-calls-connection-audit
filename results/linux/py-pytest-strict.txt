@@ -9,36 +9,36 @@
 ==================================== ERRORS ====================================
 ____________________ ERROR at teardown of test_client_leaks ____________________
   + Exception Group Traceback (most recent call last):
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/runner.py", line 361, in from_call
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/runner.py", line 361, in from_call
   |     result: TResult | None = func()
   |                              ~~~~^^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/runner.py", line 250, in <lambda>
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/runner.py", line 250, in <lambda>
   |     lambda: runtest_hook(item=item, **kwds),
   |             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/pluggy/_caller.py", line 197, in __call__
+  |   File "python/.venv/lib/python3.14/site-packages/pluggy/_caller.py", line 197, in __call__
   |     return self._hookexec(
   |            ~~~~~~~~~~~~~~^
   |         self.name, self._hookimpls.copy(), call_kwargs, firstresult
   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   |     )
   |     ^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/pluggy/_manager.py", line 183, in _hookexec
+  |   File "python/.venv/lib/python3.14/site-packages/pluggy/_manager.py", line 183, in _hookexec
   |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
   |            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/logging.py", line 886, in pytest_runtest_teardown
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/logging.py", line 886, in pytest_runtest_teardown
   |     yield
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/capture.py", line 911, in pytest_runtest_teardown
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/capture.py", line 911, in pytest_runtest_teardown
   |     return (yield)
   |             ^^^^^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 184, in pytest_runtest_teardown
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 184, in pytest_runtest_teardown
   |     collect_unraisable(item.config)
   |     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 77, in collect_unraisable
+  |   File "python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 77, in collect_unraisable
   |     raise ExceptionGroup("multiple unraisable exception warnings", errors)
   | ExceptionGroup: multiple unraisable exception warnings (2 sub-exceptions)
   +-+---------------- 1 ----------------
     | Traceback (most recent call last):
-    |   File "/home/user/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py", line 876, in __del__
+    |   File "~/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/selector_events.py", line 876, in __del__
     |     _warn(f"unclosed transport {self!r}", ResourceWarning, source=self)
     |     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     | ResourceWarning: unclosed transport <_SelectorSocketTransport fd=14>
@@ -46,14 +46,14 @@ ____________________ ERROR at teardown of test_client_leaks ____________________
     | The above exception was the direct cause of the following exception:
     | 
     | Traceback (most recent call last):
-    |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 63, in collect_unraisable
+    |   File "python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 63, in collect_unraisable
     |     warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
     |     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     | pytest.PytestUnraisableExceptionWarning: Exception ignored while calling deallocator <function _SelectorTransport.__del__ at 0x7f00078bb320>: None
     | 
     +---------------- 2 ----------------
     | Traceback (most recent call last):
-    |   File "/home/user/lab/python/tests/test_unclosed.py", line 23, in collect_garbage
+    |   File "python/tests/test_unclosed.py", line 23, in collect_garbage
     |     gc.collect()
     |     ~~~~~~~~~~^^
     | ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 47962), raddr=('127.0.0.1', 18080)>
@@ -61,7 +61,7 @@ ____________________ ERROR at teardown of test_client_leaks ____________________
     | The above exception was the direct cause of the following exception:
     | 
     | Traceback (most recent call last):
-    |   File "/home/user/lab/python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 63, in collect_unraisable
+    |   File "python/.venv/lib/python3.14/site-packages/_pytest/unraisableexception.py", line 63, in collect_unraisable
     |     warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
     |     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     | pytest.PytestUnraisableExceptionWarning: Exception ignored while finalizing socket <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 47962), raddr=('127.0.0.1', 18080)>: None

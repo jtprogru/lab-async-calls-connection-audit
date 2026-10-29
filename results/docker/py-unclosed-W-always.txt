@@ -29,23 +29,23 @@
       1 /opt/uv-python/cpython-3.14.6-linux-aarch64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=12 read=idle write=<idle, bufsize=0>>
       1 /opt/uv-python/cpython-3.14.6-linux-aarch64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=11 read=idle write=<idle, bufsize=0>>
       1 /opt/uv-python/cpython-3.14.6-linux-aarch64-gnu/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=10 read=idle write=<idle, bufsize=0>>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=9, family=2, type=1, proto=6, laddr=('127.0.0.1', 48508), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=8, family=2, type=1, proto=6, laddr=('127.0.0.1', 48498), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=7, family=2, type=1, proto=6, laddr=('127.0.0.1', 48494), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=6, family=2, type=1, proto=6, laddr=('127.0.0.1', 48490), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=24, family=2, type=1, proto=6, laddr=('127.0.0.1', 48668), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=23, family=2, type=1, proto=6, laddr=('127.0.0.1', 48652), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=22, family=2, type=1, proto=6, laddr=('127.0.0.1', 48642), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=21, family=2, type=1, proto=6, laddr=('127.0.0.1', 48632), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=20, family=2, type=1, proto=6, laddr=('127.0.0.1', 48622), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=19, family=2, type=1, proto=6, laddr=('127.0.0.1', 48610), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=18, family=2, type=1, proto=6, laddr=('127.0.0.1', 48604), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=17, family=2, type=1, proto=6, laddr=('127.0.0.1', 48590), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=16, family=2, type=1, proto=6, laddr=('127.0.0.1', 48574), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=15, family=2, type=1, proto=6, laddr=('127.0.0.1', 48570), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 48554), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=13, family=2, type=1, proto=6, laddr=('127.0.0.1', 48538), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=12, family=2, type=1, proto=6, laddr=('127.0.0.1', 48530), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=11, family=2, type=1, proto=6, laddr=('127.0.0.1', 48524), raddr=('127.0.0.1', 18080)>
-      1 /lab/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 48518), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=9, family=2, type=1, proto=6, laddr=('127.0.0.1', 48508), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=8, family=2, type=1, proto=6, laddr=('127.0.0.1', 48498), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=7, family=2, type=1, proto=6, laddr=('127.0.0.1', 48494), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=6, family=2, type=1, proto=6, laddr=('127.0.0.1', 48490), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=24, family=2, type=1, proto=6, laddr=('127.0.0.1', 48668), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=23, family=2, type=1, proto=6, laddr=('127.0.0.1', 48652), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=22, family=2, type=1, proto=6, laddr=('127.0.0.1', 48642), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=21, family=2, type=1, proto=6, laddr=('127.0.0.1', 48632), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=20, family=2, type=1, proto=6, laddr=('127.0.0.1', 48622), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=19, family=2, type=1, proto=6, laddr=('127.0.0.1', 48610), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=18, family=2, type=1, proto=6, laddr=('127.0.0.1', 48604), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=17, family=2, type=1, proto=6, laddr=('127.0.0.1', 48590), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=16, family=2, type=1, proto=6, laddr=('127.0.0.1', 48574), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=15, family=2, type=1, proto=6, laddr=('127.0.0.1', 48570), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 48554), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=13, family=2, type=1, proto=6, laddr=('127.0.0.1', 48538), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=12, family=2, type=1, proto=6, laddr=('127.0.0.1', 48530), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=11, family=2, type=1, proto=6, laddr=('127.0.0.1', 48524), raddr=('127.0.0.1', 18080)>
+      1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 48518), raddr=('127.0.0.1', 18080)>
       1   после gc.collect() сервер принял соединений: 20, сокеты клиента: ESTABLISHED=1

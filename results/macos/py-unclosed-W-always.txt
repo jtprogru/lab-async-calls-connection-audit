@@ -8,43 +8,43 @@
   20   _warn(f"unclosed transport {self!r}", ResourceWarning, source=self)
   19   gc.collect()
    1 client-unclosed      сервер принял соединений: 20, сокеты клиента: ESTABLISHED=20
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=9, family=2, type=1, proto=6, laddr=('127.0.0.1', 57894), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=8, family=2, type=1, proto=6, laddr=('127.0.0.1', 57893), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=7, family=2, type=1, proto=6, laddr=('127.0.0.1', 57892), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=6, family=2, type=1, proto=6, laddr=('127.0.0.1', 57891), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=24, family=2, type=1, proto=6, laddr=('127.0.0.1', 57909), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=23, family=2, type=1, proto=6, laddr=('127.0.0.1', 57908), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=22, family=2, type=1, proto=6, laddr=('127.0.0.1', 57907), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=21, family=2, type=1, proto=6, laddr=('127.0.0.1', 57906), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=20, family=2, type=1, proto=6, laddr=('127.0.0.1', 57905), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=19, family=2, type=1, proto=6, laddr=('127.0.0.1', 57904), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=18, family=2, type=1, proto=6, laddr=('127.0.0.1', 57903), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=17, family=2, type=1, proto=6, laddr=('127.0.0.1', 57902), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=16, family=2, type=1, proto=6, laddr=('127.0.0.1', 57901), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=15, family=2, type=1, proto=6, laddr=('127.0.0.1', 57900), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 57899), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=13, family=2, type=1, proto=6, laddr=('127.0.0.1', 57898), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=12, family=2, type=1, proto=6, laddr=('127.0.0.1', 57897), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=11, family=2, type=1, proto=6, laddr=('127.0.0.1', 57896), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 57895), raddr=('127.0.0.1', 18080)>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=9 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=8 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=7 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=6 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=25>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=24 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=23 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=22 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=21 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=20 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=19 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=18 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=17 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=16 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=15 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=14 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=13 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=12 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=11 read=idle write=<idle, bufsize=0>>
-   1 /Users/jtprogru/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=10 read=idle write=<idle, bufsize=0>>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=9, family=2, type=1, proto=6, laddr=('127.0.0.1', 57894), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=8, family=2, type=1, proto=6, laddr=('127.0.0.1', 57893), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=7, family=2, type=1, proto=6, laddr=('127.0.0.1', 57892), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=6, family=2, type=1, proto=6, laddr=('127.0.0.1', 57891), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=24, family=2, type=1, proto=6, laddr=('127.0.0.1', 57909), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=23, family=2, type=1, proto=6, laddr=('127.0.0.1', 57908), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=22, family=2, type=1, proto=6, laddr=('127.0.0.1', 57907), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=21, family=2, type=1, proto=6, laddr=('127.0.0.1', 57906), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=20, family=2, type=1, proto=6, laddr=('127.0.0.1', 57905), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=19, family=2, type=1, proto=6, laddr=('127.0.0.1', 57904), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=18, family=2, type=1, proto=6, laddr=('127.0.0.1', 57903), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=17, family=2, type=1, proto=6, laddr=('127.0.0.1', 57902), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=16, family=2, type=1, proto=6, laddr=('127.0.0.1', 57901), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=15, family=2, type=1, proto=6, laddr=('127.0.0.1', 57900), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 57899), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=13, family=2, type=1, proto=6, laddr=('127.0.0.1', 57898), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=12, family=2, type=1, proto=6, laddr=('127.0.0.1', 57897), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=11, family=2, type=1, proto=6, laddr=('127.0.0.1', 57896), raddr=('127.0.0.1', 18080)>
+   1 python/pylab.py:129: ResourceWarning: unclosed <socket.socket fd=10, family=2, type=1, proto=6, laddr=('127.0.0.1', 57895), raddr=('127.0.0.1', 18080)>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=9 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=8 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=7 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=6 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=25>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=24 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=23 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=22 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=21 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=20 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=19 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=18 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=17 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=16 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=15 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=14 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=13 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=12 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=11 read=idle write=<idle, bufsize=0>>
+   1 ~/.local/share/uv/python/cpython-3.14.6-macos-aarch64-none/lib/python3.14/asyncio/selector_events.py:876: ResourceWarning: unclosed transport <_SelectorSocketTransport fd=10 read=idle write=<idle, bufsize=0>>
    1   после gc.collect() сервер принял соединений: 20, сокеты клиента: ESTABLISHED=1

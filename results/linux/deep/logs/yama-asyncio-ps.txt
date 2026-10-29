@@ -17,12 +17,12 @@ tid        task id              task name            coroutine stack            
 exit=0
 ### sudo pstree
 └── (T) Task-1
-    └──  main /home/user/deep/py/stuck.py:11
+    └──  main ~/deep/py/stuck.py:11
         └── (T) order-0
-            └──  handle_order /home/user/deep/py/stuck.py:7
+            └──  handle_order ~/deep/py/stuck.py:7
                 └──  sleep /usr/lib/python3.14/asyncio/tasks.py:702
 └── (T) audit-0
-    └──  audit /home/user/deep/py/stuck.py:4
+    └──  audit ~/deep/py/stuck.py:4
         └──  Event.wait /usr/lib/python3.14/asyncio/locks.py:213
 exit=0
 ### ptrace_scope=0 temporarily

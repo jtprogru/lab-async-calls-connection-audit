@@ -26,7 +26,7 @@ goroutine profile: total 103
 #	0x1024e0763	runtime/pprof.writeRuntimeProfile+0xb3	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:848
 #	0x1024e040f	runtime/pprof.writeGoroutine+0x4f	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:781
 #	0x1024ddc73	runtime/pprof.(*Profile).WriteTo+0x143	/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/pprof/pprof.go:405
-#	0x1024f2deb	main.transportPerCall+0x11b		/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/go/cmd/golab/main.go:222
-#	0x1024f27ff	main.main+0x5bf				/Users/jtprogru/Work/github/jtprogru/lab-async-calls-connection-audit/go/cmd/golab/main.go:159
+#	0x1024f2deb	main.transportPerCall+0x11b		go/cmd/golab/main.go:222
+#	0x1024f27ff	main.main+0x5bf				go/cmd/golab/main.go:159
 #	0x1022cd82f	runtime.main+0x37f			/opt/homebrew/Cellar/go/1.27.3/libexec/src/runtime/proc.go:302
 

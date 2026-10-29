@@ -53,7 +53,7 @@ ____________________ ERROR at teardown of test_client_leaks ____________________
     | 
     +---------------- 2 ----------------
     | Traceback (most recent call last):
-    |   File "/lab/python/tests/test_unclosed.py", line 23, in collect_garbage
+    |   File "python/tests/test_unclosed.py", line 23, in collect_garbage
     |     gc.collect()
     |     ~~~~~~~~~~^^
     | ResourceWarning: unclosed <socket.socket fd=14, family=2, type=1, proto=6, laddr=('127.0.0.1', 49026), raddr=('127.0.0.1', 18080)>

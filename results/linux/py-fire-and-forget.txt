@@ -7,9 +7,9 @@
 
 [ 0.0 с] handler вернул: 201 Created
 Task exception was never retrieved
-future: <Task finished name='Task-2' coro=<send_receipt() done, defined at /home/user/lab/python/pylab.py:85> exception=RuntimeError('SMS-провайдер ответил 503 для заказа 42')>
+future: <Task finished name='Task-2' coro=<send_receipt() done, defined at python/pylab.py:85> exception=RuntimeError('SMS-провайдер ответил 503 для заказа 42')>
 Traceback (most recent call last):
-  File "/home/user/lab/python/pylab.py", line 87, in send_receipt
+  File "python/pylab.py", line 87, in send_receipt
     raise RuntimeError(f"SMS-провайдер ответил 503 для заказа {order_id}")
 RuntimeError: SMS-провайдер ответил 503 для заказа 42
 [ 1.0 с] ждём ещё секунду, ошибки никто не видел
