@@ -1,0 +1,5 @@
+# Правила из поста: задачи без ссылки, requests без таймаута, блокирующие вызовы в async.
+target-version = "py314"
+
+[lint]
+select = ["RUF006", "S113", "ASYNC"]
