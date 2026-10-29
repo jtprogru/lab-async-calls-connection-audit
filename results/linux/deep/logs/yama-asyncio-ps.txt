@@ -1,0 +1,48 @@
+PID=5188
+1
+    PID    PPID USER     CMD
+   5188    5186 user     python3 stuck.py
+### python3 -m asyncio ps (same user)
+Error retrieving tasks: Failed to find the PyRuntime section in process 5188 on Linux platform
+exit=1
+### pstree (same user)
+Error retrieving tasks: Failed to find the PyRuntime section in process 5188 on Linux platform
+exit=1
+### sudo ps
+tid        task id              task name            coroutine stack                                    awaiter chain                                      awaiter name    awaiter id     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5188       0x7ef769b58410       Task-1               main                                                                                                                  0x0            
+5188       0x7ef769b585f0       audit-0              Event.wait -> audit                                                                                                   0x0            
+5188       0x7ef769b48050       order-0              sleep -> handle_order                              main                                               Task-1          0x7ef769b58410 
+exit=0
+### sudo pstree
+└── (T) Task-1
+    └──  main /home/user/deep/py/stuck.py:11
+        └── (T) order-0
+            └──  handle_order /home/user/deep/py/stuck.py:7
+                └──  sleep /usr/lib/python3.14/asyncio/tasks.py:702
+└── (T) audit-0
+    └──  audit /home/user/deep/py/stuck.py:4
+        └──  Event.wait /usr/lib/python3.14/asyncio/locks.py:213
+exit=0
+### ptrace_scope=0 temporarily
+kernel.yama.ptrace_scope = 0
+tid        task id              task name            coroutine stack                                    awaiter chain                                      awaiter name    awaiter id     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5188       0x7ef769b58410       Task-1               main                                                                                                                  0x0            
+5188       0x7ef769b585f0       audit-0              Event.wait -> audit                                                                                                   0x0            
+5188       0x7ef769b48050       order-0              sleep -> handle_order                              main                                               Task-1          0x7ef769b58410 
+exit=0
+kernel.yama.ptrace_scope = 1
+### back to 1, retry
+Error retrieving tasks: Failed to find the PyRuntime section in process 5188 on Linux platform
+exit=1
+### strace check of the failing syscall
+/usr/bin/strace
+setpriv from util-linux 2.41.3
+PID=14017
+tid        task id              task name            coroutine stack                                    awaiter chain                                      awaiter name    awaiter id     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14017      0x7dfb0131c410       Task-1               main                                                                                                                  0x0            
+14017      0x7dfb0131c5f0       audit-0              Event.wait -> audit                                                                                                   0x0            
+exit=0

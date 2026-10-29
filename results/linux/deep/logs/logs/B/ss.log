@@ -1,0 +1,765 @@
+=== +0.0s 12:41:04.278
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 ESTAB 127.0.0.1:50332 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50318 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50308 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50302 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50290 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50278 127.0.0.1:28090   
+      1 ESTAB 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=275 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +5.1s 12:41:09.391
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,56sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,56sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=276 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +10.2s 12:41:14.477
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,51sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,51sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=276 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +15.3s 12:41:19.568
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,46sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,46sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=278 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +20.4s 12:41:24.658
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,41sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,41sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=280 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +25.4s 12:41:29.720
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,36sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,36sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=280 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +30.5s 12:41:34.787
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,31sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,31sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=281 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +35.6s 12:41:39.833
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,26sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,26sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=285 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +40.6s 12:41:44.894
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,21sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,21sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=286 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +45.7s 12:41:49.967
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,16sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,16sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=287 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +50.8s 12:41:55.256
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,10sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,10sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=288 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +55.8s 12:42:00.971
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,5.898sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,5.898sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,5.898sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,5.902sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,5.903sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,5.899sec,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,5.900sec,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=289 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+--- detail: lsof -nP -a -p CP -iTCP
+COMMAND    PID USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+deepclien 2527 user  6u  IPv4  23116      0t0  TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  7u  IPv4  23125      0t0  TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  8u  IPv4  23128      0t0  TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  9u  IPv4  23131      0t0  TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user 10u  IPv4  23134      0t0  TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -p CP | grep sock/IPv
+deepclien 2527 user   6u     IPv4  23116      0t0    TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   7u     IPv4  23125      0t0    TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   8u     IPv4  23128      0t0    TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   9u     IPv4  23131      0t0    TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  10u     IPv4  23134      0t0    TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  11u     IPv4  21996      0t0    TCP 127.0.0.1:50200->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -a -p CP -iTCP | wc -l = 21
+--- detail: ss -tanpoH all for client pid
+CLOSE-WAIT 1      0          127.0.0.1:50158 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=6))                              
+CLOSE-WAIT 1      0          127.0.0.1:50174 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=7))                              
+CLOSE-WAIT 1      0          127.0.0.1:50184 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=8))                              
+CLOSE-WAIT 1      0          127.0.0.1:50196 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=9))                              
+--- detail: ss -a count for port: 41
+=== +61.0s 12:42:05.237
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50332 timer:(timewait,765ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50318 timer:(timewait,765ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50308 timer:(timewait,764ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50302 timer:(timewait,765ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50290 timer:(timewait,766ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50278 timer:(timewait,762ms,0)  
+      1 FIN-WAIT-2 127.0.0.1:28090 127.0.0.1:50276 timer:(timewait,763ms,0)  
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=290 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +66.0s 12:42:10.296
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=290 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +71.1s 12:42:15.342
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=1 TcpOutRsts=292 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +76.1s 12:42:20.386
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=21 TcpOutRsts=312 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +81.2s 12:42:25.424
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=41 TcpOutRsts=332 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +86.8s 12:42:31.788
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=41 TcpOutRsts=335 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +91.9s 12:42:36.151
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=41 TcpOutRsts=335 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +97.0s 12:42:41.221
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=61 TcpOutRsts=359 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +102.0s 12:42:46.314
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=379 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +107.1s 12:42:51.381
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=379 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +112.2s 12:42:56.451
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=380 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +117.2s 12:43:01.517
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=383 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+--- detail: lsof -nP -a -p CP -iTCP
+COMMAND    PID USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+deepclien 2527 user  6u  IPv4  23116      0t0  TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  7u  IPv4  23125      0t0  TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  8u  IPv4  23128      0t0  TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  9u  IPv4  23131      0t0  TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user 10u  IPv4  23134      0t0  TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -p CP | grep sock/IPv
+deepclien 2527 user   6u     IPv4  23116      0t0    TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   7u     IPv4  23125      0t0    TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   8u     IPv4  23128      0t0    TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   9u     IPv4  23131      0t0    TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  10u     IPv4  23134      0t0    TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  11u     IPv4  21996      0t0    TCP 127.0.0.1:50200->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -a -p CP -iTCP | wc -l = 21
+--- detail: ss -tanpoH all for client pid
+CLOSE-WAIT 1      0          127.0.0.1:50158     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=6))                             
+CLOSE-WAIT 1      0          127.0.0.1:50174     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=7))                             
+CLOSE-WAIT 1      0          127.0.0.1:50184     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=8))                             
+CLOSE-WAIT 1      0          127.0.0.1:50196     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=9))                             
+--- detail: ss -a count for port: 21
+=== +122.4s 12:43:06.727
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=383 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +127.5s 12:43:11.793
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=384 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +132.6s 12:43:16.881
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=384 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +137.7s 12:43:21.954
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=385 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +142.7s 12:43:27.134
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=386 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +147.8s 12:43:32.766
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=388 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +152.9s 12:43:37.125
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=392 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +157.9s 12:43:42.177
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=392 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +163.0s 12:43:47.226
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=393 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +168.0s 12:43:52.265
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=396 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +173.0s 12:43:57.303
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=397 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +178.1s 12:44:02.345
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=397 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+--- detail: lsof -nP -a -p CP -iTCP
+COMMAND    PID USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+deepclien 2527 user  6u  IPv4  23116      0t0  TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  7u  IPv4  23125      0t0  TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  8u  IPv4  23128      0t0  TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  9u  IPv4  23131      0t0  TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user 10u  IPv4  23134      0t0  TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -p CP | grep sock/IPv
+deepclien 2527 user   6u     IPv4  23116      0t0    TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   7u     IPv4  23125      0t0    TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   8u     IPv4  23128      0t0    TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   9u     IPv4  23131      0t0    TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  10u     IPv4  23134      0t0    TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  11u     IPv4  21996      0t0    TCP 127.0.0.1:50200->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -a -p CP -iTCP | wc -l = 21
+--- detail: ss -tanpoH all for client pid
+CLOSE-WAIT 1      0          127.0.0.1:50158     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=6))                            
+CLOSE-WAIT 1      0          127.0.0.1:50174     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=7))                            
+CLOSE-WAIT 1      0          127.0.0.1:50184     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=8))                            
+CLOSE-WAIT 1      0          127.0.0.1:50196     127.0.0.1:28090 users:(("deepclient",pid=2527,fd=9))                            
+--- detail: ss -a count for port: 21
+=== +183.2s 12:44:07.482
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=398 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +188.3s 12:44:12.522
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=399 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +193.3s 12:44:17.559
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=401 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +198.3s 12:44:22.600
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=401 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +203.4s 12:44:27.641
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=402 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +208.4s 12:44:32.681
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=406 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +213.5s 12:44:37.723
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=410 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +218.5s 12:44:42.761
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=411 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +223.5s 12:44:47.799
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=412 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +228.6s 12:44:52.838
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=412 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +233.6s 12:44:57.879
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=412 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +238.6s 12:45:02.916
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=415 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+--- detail: lsof -nP -a -p CP -iTCP
+COMMAND    PID USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+deepclien 2527 user  6u  IPv4  23116      0t0  TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  7u  IPv4  23125      0t0  TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  8u  IPv4  23128      0t0  TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  9u  IPv4  23131      0t0  TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user 10u  IPv4  23134      0t0  TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -p CP | grep sock/IPv
+deepclien 2527 user   6u     IPv4  23116      0t0    TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   7u     IPv4  23125      0t0    TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   8u     IPv4  23128      0t0    TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   9u     IPv4  23131      0t0    TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  10u     IPv4  23134      0t0    TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  11u     IPv4  21996      0t0    TCP 127.0.0.1:50200->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -a -p CP -iTCP | wc -l = 21
+--- detail: ss -tanpoH all for client pid
+CLOSE-WAIT 1      0          127.0.0.1:50158 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=6)) 
+CLOSE-WAIT 1      0          127.0.0.1:50174 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=7)) 
+CLOSE-WAIT 1      0          127.0.0.1:50184 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=8)) 
+CLOSE-WAIT 1      0          127.0.0.1:50196 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=9)) 
+--- detail: ss -a count for port: 21
+=== +243.8s 12:45:08.294
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=418 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +248.8s 12:45:13.718
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=421 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +253.8s 12:45:18.115
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=422 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +258.9s 12:45:23.153
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=423 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +263.9s 12:45:28.190
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=423 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +269.0s 12:45:33.230
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=425 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +274.0s 12:45:38.268
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=427 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +279.0s 12:45:43.309
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=428 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +284.1s 12:45:48.348
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=430 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +289.1s 12:45:53.386
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=430 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +294.2s 12:45:58.425
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=430 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+=== +299.2s 12:46:03.463
+      1 LISTEN 127.0.0.1:28090 0.0.0.0:*   
+      1 CLOSE-WAIT 127.0.0.1:50332 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50318 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50308 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50302 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50290 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50278 127.0.0.1:28090   
+      1 CLOSE-WAIT 127.0.0.1:50276 127.0.0.1:28090   
+client fds sockets: 20
+TcpEstabResets=81 TcpOutRsts=433 TcpExtTCPAbortOnData=0 TcpExtTCPAbortOnClose=1 
+--- detail: lsof -nP -a -p CP -iTCP
+COMMAND    PID USER FD   TYPE DEVICE SIZE/OFF NODE NAME
+deepclien 2527 user  6u  IPv4  23116      0t0  TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  7u  IPv4  23125      0t0  TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  8u  IPv4  23128      0t0  TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  9u  IPv4  23131      0t0  TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user 10u  IPv4  23134      0t0  TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -p CP | grep sock/IPv
+deepclien 2527 user   6u     IPv4  23116      0t0    TCP 127.0.0.1:50158->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   7u     IPv4  23125      0t0    TCP 127.0.0.1:50174->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   8u     IPv4  23128      0t0    TCP 127.0.0.1:50184->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user   9u     IPv4  23131      0t0    TCP 127.0.0.1:50196->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  10u     IPv4  23134      0t0    TCP 127.0.0.1:50198->127.0.0.1:28090 (CLOSE_WAIT)
+deepclien 2527 user  11u     IPv4  21996      0t0    TCP 127.0.0.1:50200->127.0.0.1:28090 (CLOSE_WAIT)
+--- detail: lsof -nP -a -p CP -iTCP | wc -l = 21
+--- detail: ss -tanpoH all for client pid
+CLOSE-WAIT 1      0          127.0.0.1:50158 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=6)) 
+CLOSE-WAIT 1      0          127.0.0.1:50174 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=7)) 
+CLOSE-WAIT 1      0          127.0.0.1:50184 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=8)) 
+CLOSE-WAIT 1      0          127.0.0.1:50196 127.0.0.1:28090 users:(("deepclient",pid=2527,fd=9)) 
+--- detail: ss -a count for port: 21

@@ -1,0 +1,16 @@
+### /big: ss states on port 28080 (2s after requests, client alive)
+      1 LISTEN server
+### nstat delta
+TcpActiveOpens                  50                 0.0
+TcpPassiveOpens                 50                 0.0
+TcpEstabResets                  100                0.0
+TcpOutRsts                      50                 0.0
+TcpExtTCPAbortOnClose           50                 0.0
+### /big: flags in capture
+    540 Flags [.]
+    213 Flags [P.]
+     39 Flags [R.]
+     45 Flags [S.]
+     45 Flags [S]
+### /big: who sent R / F
+     39 client->server [R.],

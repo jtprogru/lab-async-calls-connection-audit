@@ -1,0 +1,19 @@
+### /ok: ss states on port 28080 (2s after requests, client alive)
+      2 ESTAB client
+      2 ESTAB server
+      1 LISTEN server
+### nstat delta
+TcpActiveOpens                  2                  0.0
+TcpPassiveOpens                 2                  0.0
+TcpEstabResets                  0                  0.0
+TcpOutRsts                      0                  0.0
+TcpExtTCPAbortOnClose           0                  0.0
+### /ok: flags in capture
+     10 Flags [.]
+      4 Flags [F.]
+    100 Flags [P.]
+      2 Flags [S.]
+      2 Flags [S]
+### /ok: who sent R / F
+      2 client->server [F.],
+      2 server->client [F.],

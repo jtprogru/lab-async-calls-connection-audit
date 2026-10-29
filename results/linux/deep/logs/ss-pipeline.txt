@@ -1,0 +1,35 @@
+ss utility, iproute2-6.19.0
+### ss -Htn state close-wait | head -3
+1      0      127.0.0.1:34716 127.0.0.1:28110$
+1      0      127.0.0.1:34722 127.0.0.1:28110$
+1      0      127.0.0.1:34726 127.0.0.1:28110$
+### pipeline
+     20 127.0.0.1:28120
+     20 127.0.0.1:28110
+     20 127.0.0.1:28100
+     20 127.0.0.1:28090
+     20 127.0.0.1:28080
+### -p
+1      0      127.0.0.1:34716 127.0.0.1:28110 users:(("deepclient",pid=2525,fd=6)) 
+1      0      127.0.0.1:34722 127.0.0.1:28110 users:(("deepclient",pid=2525,fd=7)) 
+      1 users:(("deepclient",pid=2542,fd=9))
+      1 users:(("deepclient",pid=2542,fd=8))
+      1 users:(("deepclient",pid=2542,fd=7))
+### -e
+1      0      127.0.0.1:34716 127.0.0.1:28110 timer:(keepalive,11sec,0) uid:1000 ino:24734 sk:1007 cgroup:/user.slice/user-1000.slice/session-14.scope -->   
+1      0      127.0.0.1:34722 127.0.0.1:28110 timer:(keepalive,11sec,0) uid:1000 ino:23818 sk:1008 cgroup:/user.slice/user-1000.slice/session-14.scope -->   
+### -o
+1      0      127.0.0.1:34716 127.0.0.1:28110 timer:(keepalive,11sec,0)   
+1      0      127.0.0.1:34722 127.0.0.1:28110 timer:(keepalive,11sec,0)   
+     20 timer:(keepalive,4.389sec,0)
+     20 timer:(keepalive,3.518sec,0)
+     20 timer:(keepalive,14sec,0)
+### -i
+1      0      127.0.0.1:34716 127.0.0.1:28110
+	 cubic wscale:10,10 rto:201 rtt:0.048/0.026 ato:40 mss:32768 pmtu:65535 rcvmss:536 advmss:65483 cwnd:10 bytes_sent:98 bytes_acked:99 bytes_received:120 segs_out:6 segs_in:5 data_segs_out:1 data_segs_in:1 send 54613333333bps lastsnd:58520 lastrcv:58519 lastack:18299 pacing_rate 108942961032bps delivery_rate 12483047616bps delivered:2 app_limited rcv_space:65495 rcv_ssthresh:65495 minrtt:0.021 snd_wnd:65536 rcv_wnd:65536         
+1      0      127.0.0.1:34722 127.0.0.1:28110
+	 cubic wscale:10,10 rto:201 rtt:0.02/0.01 ato:40 mss:32768 pmtu:65535 rcvmss:536 advmss:65483 cwnd:10 bytes_sent:98 bytes_acked:99 bytes_received:120 segs_out:6 segs_in:5 data_segs_out:1 data_segs_in:1 send 131072000000bps lastsnd:58519 lastrcv:58518 lastack:18299 pacing_rate 262144000000bps delivery_rate 20164923072bps delivered:2 app_limited rcv_space:65495 rcv_ssthresh:65495 minrtt:0.013 snd_wnd:65536 rcv_wnd:65536          
+lines with -i: 200, without: 100
+### header without -H
+Recv-Q Send-Q Local Address:Port  Peer Address:Port 
+1      0          127.0.0.1:34716    127.0.0.1:28110

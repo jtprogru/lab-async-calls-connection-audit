@@ -1,0 +1,2 @@
+net.ipv4.tcp_fin_timeout = 10
+done ft=10

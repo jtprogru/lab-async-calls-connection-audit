@@ -3,3 +3,6 @@ python/.venv/
 __pycache__/
 .pytest_cache/
 *.pcap
+
+# захваты из архива deep-dive храним, остальные pcap — нет
+!results/linux/deep/**/*.pcap
